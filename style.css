@@ -1,0 +1,177 @@
+* {
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+background-image: url(./assets/bg.jpg);
+background-position: top center;
+background-size: 100% auto;
+background-repeat:no-repeat;
+background-color: #121214;
+
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    line-height: 160%;
+}
+
+header{
+    padding-top: 32px;
+    height: calc(120px + 32px);
+
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 50%;
+    display: flex;
+
+    padding: 4px;
+
+    transition: transform.3s;
+}
+
+header div:hover{
+    transform: scale(1.2)
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+main{
+    max-width:520px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    
+    
+}
+
+section div {
+    background-color: #2A2629;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}   
+
+section h2{
+    font-weight: 900;
+    font-size: 24px 38px;
+    line-height: 160%;
+ 
+    color: #FFFFFF ;
+}
+
+section p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+
+
+letter-spacing: -0.18px;
+
+color: #C1C1C1;
+}
+
+section ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    
+
+    margin-top: 24px;
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.2);
+}
+
+.movies-list img{
+    width: 90px;
+    border-radius: 8px;
+    
+}
+
+.series-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+svg path{
+    stroke:#f5f2f2;
+}
+
+header div{
+    animation: fromTop .7s .2s backwards;
+}
+
+/*animation*/
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateY(0)
+    }
+}
+
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateY(0)
+    }
+
+}
