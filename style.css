@@ -163,6 +163,9 @@ main section:nth-child(3) {
     animation-delay: .8s;
 }
 
+
+
+
 @keyframes fromBottom{
     from{
         opacity: 0;
